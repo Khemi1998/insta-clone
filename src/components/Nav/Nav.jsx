@@ -30,7 +30,7 @@ const Nav = () => {
         src={profile}
         alt="instaProfile"
       />
-      {showUserMenu && <UserNav />}
+      {showUserMenu && <UserNav toggle={toggleProfiles} />}
     </div>
   );
 };

@@ -2,11 +2,16 @@ import "./UserNav.scss";
 import { Link } from "react-router-dom";
 import profiles from "../../data/data";
 
-const Usernav = () => {
+const Usernav = (props) => {
+  const { toggle } = props;
   const account = profiles.map((profile, key) => {
     return (
       <div className="usernav__links" key={key}>
-        <Link className="usernav__item" to={`/${profile.name.toLowerCase()}`}>
+        <Link
+          onClick={toggle}
+          className="usernav__item"
+          to={`/${profile.name.toLowerCase()}`}
+        >
           {profile.name}
         </Link>
       </div>
