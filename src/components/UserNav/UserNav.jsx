@@ -5,13 +5,13 @@ const Usernav = () => {
   return (
     <div className="usernav">
       <div className="usernav__links">
-        <Link className="nav-menu__item" to="/cat">
+        <Link className="usernav__item" to="/cat">
           Cat
         </Link>
-        <Link className="nav-menu__item" to="/dog">
+        <Link className="usernav__item" to="/dog">
           Dog
         </Link>
-        <Link className="nav-menu__item" to="/rabbit">
+        <Link className="usernav__item" to="/rabbit">
           Rabbit
         </Link>
       </div>
