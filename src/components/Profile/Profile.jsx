@@ -1,6 +1,10 @@
 import "./Profile.scss";
 import verified from "../../assets/images/verified.svg";
 import dots from "../../assets/images/dots.svg";
+import grid from "../../assets/images/grid.svg";
+import video from "../../assets/images/video.svg";
+import play from "../../assets/images/play.svg";
+import pic from "../../assets/images/picOf.svg";
 
 const Profile = (props) => {
   const { dp, Name, bioTitle, description, posts, followers, following } =
@@ -25,16 +29,22 @@ const Profile = (props) => {
       <div className="profile__info">
         <div className="profile__info__item">
           <strong>{posts}</strong>
-          <p>posts</p>
+          <p className="profile__info_grey">posts</p>
         </div>
         <div className="profile__info__item">
           <strong>{followers}</strong>
-          <p>followers</p>
+          <p className="profile__info_grey">followers</p>
         </div>
         <div className="profile__info__item">
           <strong>{following}</strong>
-          <p>following</p>
+          <p className="profile__info_grey">following</p>
         </div>
+      </div>
+      <div className="profile__icons">
+        <img className="profile__icons__item" src={grid} alt="grid" />
+        <img className="profile__icons__item" src={video} alt="video" />
+        <img className="profile__icons__item" src={play} alt="play" />
+        <img className="profile__icons__item" src={pic} alt="pic" />
       </div>
     </div>
   );
