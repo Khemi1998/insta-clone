@@ -2,6 +2,7 @@
 @use "../../assets/styles/buttons" as *;
 
 .profile {
+  margin-top: 1rem;
   &__followbtn {
     width: 8rem;
     margin-right: 1rem;
@@ -12,19 +13,19 @@
   }
 
   &__content {
-      margin-left:1rem;
+    margin-left: 1rem;
   }
 
   &__icons {
-      display: flex;
-      flex-direction: row;
-      border-top: 2px solid $default-color;
-      padding: 1rem;
-      justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid $default-color;
+    padding: 1rem;
+    justify-content: space-around;
 
-      &__item {
-          height: 1.5rem;
-      }
+    &__item {
+      height: 1.5rem;
+    }
   }
 
   &__head {
@@ -55,7 +56,7 @@
   padding: 0.5rem;
 
   &_grey {
-      color: $grey;
+    color: $grey;
   }
 }
 
