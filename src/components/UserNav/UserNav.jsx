@@ -1,4 +1,5 @@
 import "./UserNav.scss";
+import { Link } from "react-router-dom";
 
 const Usernav = () => {
   return (

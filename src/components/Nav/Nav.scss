@@ -1,17 +1,21 @@
-$blue: rgb(88, 40, 199);
+@use "../../assets/styles/variables" as *;
 
 .nav {
   width: 100%;
-  margin: 10px 0;
+  height: 3.5rem;
+  margin: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 5px solid $blue;
+  border-bottom: 1px solid $default-color;
 
-  > * {
-    text-decoration: none;
-    font-size: 18px;
-    margin: 10px 0;
-    color: black;
+  &__logo {
+    height: 3.5rem;
+    // border: 3px solid $default-color;
+  }
+
+  &__icon {
+    height: 1.5rem;
+    // border: 3px solid $default-color;
   }
 }
