@@ -1,19 +1,28 @@
 // import "./Cat.scss";
 import Profile from "../../components/Profile/Profile";
-import cat from "../../assets/images/cat.jpeg";
+import profiles from "../../data/data";
 
 const Cat = () => {
+
+const catProfile = profiles.map((profile, key) => {
+  if (profile.name=="Cat") {
+    return <div key={key}>
+      <Profile
+      dp={profile.dp}
+      Name={profile.name}
+      bioTitle={profile.bio}
+      description={profile.description}
+      posts={profile.posts}
+      followers={profile.followers}
+      following={profile.following}
+        />
+    </div>
+  }
+})
+
   return (
     <div className="cat">
-      <Profile
-        dp={cat}
-        Name="Cat"
-        bioTitle="My cat's account"
-        description="A document of my cat's adventures"
-        posts="16,889"
-        followers="13.1m"
-        following="7"
-      />
+      {catProfile}
     </div>
   );
 };

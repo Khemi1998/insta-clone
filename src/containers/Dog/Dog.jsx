@@ -1,19 +1,28 @@
 // import "./Dog.scss";
 import Profile from "../../components/Profile/Profile";
-import puppy from "../../assets/images/puppy.jpeg";
+import profiles from "../../data/data";
 
 const Dog = () => {
-  return (
-    <div className="Dog">
+
+const dogProfile = profiles.map((profile, key) => {
+  if (profile.name=="Dog") {
+    return <div key={key}>
       <Profile
-        dp={puppy}
-        Name="Dog"
-        bioTitle="My dog's account"
-        description="A document of my 's adventures"
-        posts="12,5569"
-        followers="9.1m"
-        following="1"
-      />
+      dp={profile.dp}
+      Name={profile.name}
+      bioTitle={profile.bio}
+      description={profile.description}
+      posts={profile.posts}
+      followers={profile.followers}
+      following={profile.following}
+        />
+    </div>
+  }
+})
+
+  return (
+    <div className="dog">
+      {dogProfile}
     </div>
   );
 };

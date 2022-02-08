@@ -1,20 +1,21 @@
 import "./UserNav.scss";
 import { Link } from "react-router-dom";
+import profiles from "../../data/data";
 
 const Usernav = () => {
-  return (
-    <div className="usernav">
-      <div className="usernav__links">
-        <Link className="usernav__item" to="/cat">
-          Cat
-        </Link>
-        <Link className="usernav__item" to="/dog">
-          Dog
-        </Link>
-        <Link className="usernav__item" to="/rabbit">
-          Rabbit
+  const account = profiles.map((profile, key) => {
+    return (
+      <div className="usernav__links" key={key}>
+        <Link className="usernav__item" to={`/${profile.name.toLowerCase()}`}>
+          {profile.name}
         </Link>
       </div>
+    );
+  });
+
+  return (
+    <div className="usernav">
+      <div>{account}</div>
     </div>
   );
 };
