@@ -1,0 +1,51 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/buttons" as *;
+
+.profile {
+  &__followbtn {
+    width: 8rem;
+    margin-right: 1rem;
+  }
+
+  &__arrowbtn {
+    width: 1.5rem;
+  }
+
+  &__content {
+      margin-left:1rem;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30vw;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    &__pic {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50px;
+    }
+  }
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 2px solid $default-color;
+  padding: 1rem;
+}
+
+.profile__info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+@use "../../assets/styles/variables" as *;
+
+button {
+    background-color: $button-background;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 1.5rem;
+    font-weight: bolder;
+}
