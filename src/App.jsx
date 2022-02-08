@@ -1,20 +1,23 @@
-import { Route, Router, Routes } from 'react-router-dom';
-import './App.scss';
-import Nav from './components/Nav/Nav';
+import "./App.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav/Nav";
+import Cat from "./containers/Cat/Cat";
+import Dog from "./containers/Dog/Dog";
+import Rabbit from "./containers/Rabbit/Rabbit";
+import Error from "./containers/Error/Error";
 
 function App() {
-//   <Router>
-//   <Nav />
-//   <Routes>
-//     <Route path="/" element={<Home />} />
-//     <Route path="/greetings" element={<GreetingList greetings={greetings} />} />
-//     <Route path="/new-greeting" element={<Form />} />
-//   </Routes>
-// </Router>
-
   return (
-    <Nav />
-  )
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Error />} />
+        <Route path="/cat" element={<Cat />} />
+        <Route path="/dog" element={<Dog />} />
+        <Route path="/rabbit" element={<Rabbit />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

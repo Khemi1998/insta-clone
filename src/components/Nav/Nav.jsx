@@ -6,8 +6,16 @@ import add from "../../assets/images/add.svg";
 import compass from "../../assets/images/compass.svg";
 import heart from "../../assets/images/heart.svg";
 import profile from "../../assets/images/profile.svg";
+import { useState } from "react";
+import UserNav from "../UserNav/UserNav";
 
 const Nav = () => {
+  const [showUserMenu, setShowUserMenu] = useState(true);
+
+  const toggleProfiles = () => {
+    setShowUserMenu(!showUserMenu);
+  };
+
   return (
     <div className="nav">
       <img className="nav__logo" src={insta} alt="instaLogo" />
@@ -16,7 +24,13 @@ const Nav = () => {
       <img className="nav__icon" src={add} alt="instaAdd" />
       <img className="nav__icon" src={compass} alt="instaCompass" />
       <img className="nav__icon" src={heart} alt="instaHeart" />
-      <img className="nav__icon" src={profile} alt="instaProfile" />
+      <img
+        onClick={toggleProfiles}
+        className="nav__icon"
+        src={profile}
+        alt="instaProfile"
+      />
+      {showUserMenu && <UserNav />}
     </div>
   );
 };

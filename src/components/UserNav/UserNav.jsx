@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 
 const Usernav = () => {
   return (
-    <div className="usernav"> test
-      {/* <Link className="nav-menu__item" to="/">
-        Home
-      </Link>
-
-      <Link className="nav-menu__item" to="/greetings">
-        Greetings
-      </Link>
-
-      <Link className="nav-menu__item" to="/new-greeting">
-        Add Greeting
-      </Link> */}
+    <div className="usernav">
+      <div className="usernav__links">
+        <Link className="nav-menu__item" to="/cat">
+          Cat
+        </Link>
+        <Link className="nav-menu__item" to="/dog">
+          Dog
+        </Link>
+        <Link className="nav-menu__item" to="/rabbit">
+          Rabbit
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Usernav;
