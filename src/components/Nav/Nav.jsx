@@ -10,7 +10,7 @@ import { useState } from "react";
 import UserNav from "../UserNav/UserNav";
 
 const Nav = () => {
-  const [showUserMenu, setShowUserMenu] = useState(true);
+  const [showUserMenu, setShowUserMenu] = useState(false);
 
   const toggleProfiles = () => {
     setShowUserMenu(!showUserMenu);

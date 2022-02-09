@@ -16,6 +16,8 @@ const profiles = [
       "http://placekitten.com/600/600",
       "http://placekitten.com/700/700",
       "http://placekitten.com/800/800",
+      "https://placekitten.com/900/900",
+      "https://placekitten.com/1000/1000",
     ],
   },
   {
@@ -27,6 +29,17 @@ const profiles = [
     posts: "12,5569",
     followers: "9.1m",
     following: "1",
+    postings: [
+      "http://placedog.net/200/200",
+      "http://placedog.net/300/300",
+      "http://placedog.net/400/400",
+      "http://placedog.net/500/500",
+      "http://placedog.net/600/600",
+      "http://placedog.net/700/700",
+      "http://placedog.net/800/800",
+      "https://placedog.net/900/900",
+      "https://placedog.net/1000/1000",
+    ],
   },
   {
     id: 3,
@@ -37,6 +50,17 @@ const profiles = [
     posts: "25,999",
     followers: "15.6m",
     following: "108",
+    postings: [
+      "https://i.pinimg.com/736x/14/0d/87/140d87bf32a6f513912d3e1456f1c0c5.jpg",
+      "https://a.wattpad.com/useravatar/6_Yue_6.256.644733.jpg",
+      "https://i.pinimg.com/474x/3a/ff/84/3aff849766b881ebe9640caf996e915a.jpg",
+      "https://pbs.twimg.com/profile_images/692773084852535297/DPxXqFtk_400x400.jpg",
+      "https://i.pinimg.com/474x/9c/33/8f/9c338f4d017779acd6feb23ef6e770d6.jpg",
+      "https://i.pinimg.com/474x/8b/6c/68/8b6c68091b8ca5aaf3e6ca41de9dfbf4.jpg",
+      "https://i.pinimg.com/originals/ab/1c/3a/ab1c3aaf45ce994c419c81d5155fe1db.jpg",
+      "https://i.pinimg.com/564x/93/ea/53/93ea53c5ac78145a6f1d961792a0bc29.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4UZNOM8LtXI19PY7GV2C1CTi_nrOrJwe7g&usqp=CAU",
+    ],
   },
 ];
 export default profiles;

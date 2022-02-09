@@ -4,7 +4,14 @@ import profiles from "../../data/data";
 
 const Rabbit = () => {
   const rabbitProfile = profiles.map((profile, key) => {
-    if (profile.name == "Rabbit") {
+    if (profile.name === "Rabbit") {
+      const rabbitPostings = profile.postings.map((postings, key) => {
+        return (
+          <div key={key}>
+            <img className="postings__item" src={postings} alt={key} />
+          </div>
+        );
+      });
       return (
         <div key={key}>
           <Profile
@@ -16,6 +23,7 @@ const Rabbit = () => {
             followers={profile.followers}
             following={profile.following}
           />
+          <div className="postings">{rabbitPostings}</div>
         </div>
       );
     }
